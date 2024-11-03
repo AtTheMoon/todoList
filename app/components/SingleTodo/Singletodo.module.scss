@@ -1,0 +1,26 @@
+.todo{
+
+    &__container{
+        width: 1000px;
+        min-height: 100px;
+        background-color: lightblue;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px 0 0;
+
+        a{
+            cursor: pointer;
+            width: 200px;
+            background-color: white;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 auto;
+        }
+    }
+
+    &__text{
+        font-size: 20px;
+    }
+}

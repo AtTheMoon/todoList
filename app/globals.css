@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: darkgray;
+}
+
+.home__title{
+  font-size: 30px;
+  text-align: center;
+}
+
+.home__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

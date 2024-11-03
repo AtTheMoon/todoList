@@ -1,0 +1,14 @@
+.form{
+
+    &__container{
+        margin: 5px 0;
+
+        input{
+            font-size: 18px;
+            margin: 5px 10px 0;
+            outline: none;
+            cursor: pointer;
+            padding: 0 3px;
+        }
+    }
+}
