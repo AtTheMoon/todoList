@@ -13,6 +13,7 @@ const App = () => {
     const addToStore = useTodoStore((state: any)=> state.addTodo)
     const toggleToStore = useTodoStore((state:any)=> state.toggleTodo)
     const saveToStore = useTodoStore((state:any)=> state.saveChange)
+    const deleteFromStore = useTodoStore((state:any)=>state.deleteTodo)
     
     
     const [todos, setTodos] = useState<ITodos[]>(myTodos)
@@ -39,6 +40,7 @@ const App = () => {
     }
 
     const deleteTodo = (id: number) =>{
+        deleteFromStore(id)
         setTodos(
             todos.filter(todo => todo.id !==id)
         )

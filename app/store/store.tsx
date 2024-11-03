@@ -20,6 +20,9 @@ export const useTodoStore = create((set, get:any) =>(
             }),
             saveChange: (title: string | number, id:number) => set({
                 todos: get().todos.map((todo:any)=> id == todo.id ? {...todo, text: title, isChanged: false} : todo)
+            }),
+            deleteTodo: (id:number) => set({
+                todos: get().todos.filter(((todo:any)=> todo.id !== id))
             })
     }
 ))
